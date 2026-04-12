@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Convite de Casamento - Alana & Gabriel">
+  <meta property="og:description" content="Você está convidado para o nosso casamento!">
+  <meta property="og:image" content="https://gabrielwilliamsp22-droid.github.io/Convite-de-Casamento-Oficial/img.jpg">
+  <meta property="og:url" content="https://gabrielwilliamsp22-droid.github.io/Convite-de-Casamento-Oficial/">
+  <meta property="og:type" content="website">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <title>Convite de Casamento - Alana &amp; Gabriel</title>
+  <link rel="stylesheet" href="style.css">
+  <Script src="back.js"defer></Script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet">
+
+ </head>
+ <body class="h-full">
+  <div id="app" class="bg-pattern h-full w-full overflow-auto flex items-center justify-content-center">
+   <div class="flex flex-col items-center justify-center w-full min-h-full py-10 px-4">
+    <div class="card-container" id="cardContainer"><!-- Envelope -->
+     <div class="envelope-wrapper" id="envelopeWrapper" onclick="openEnvelope()">
+      <div class="envelope" id="envelope">
+       <div class="envelope-body">
+        <div class="envelope-texture"></div>
+       </div>
+       <div class="envelope-flap"></div>
+       <div class="envelope-inner-shadow"></div><!-- Wax Seal -->
+       <div class="wax-seal">
+        <div class="seal-drips"></div>
+        <div class="seal-outer"><span class="seal-text" id="sealText">A &amp; G</span>
+        </div>
+       </div>
+      </div>
+      <p class="text-center mt-5 click-hint" style="font-family:'Cormorant Garamond',serif; color:rgba(255, 215, 0, 1); font-size:16px; font-weight: bold; letter-spacing:2px;">TOQUE PARA ABRIR</p>
+     </div><!-- Invitation -->
+     <div class="invitation-card" id="invitationCard">
+      <div class="inv-inner"><span class="ornament">❧</span>
+       <div class="text-center mt-5">
+        <p style="font-family:'Cormorant Garamond',serif; color:#6b8659; font-size:13px; letter-spacing:3px; text-transform:uppercase;">Com grande alegria</p>
+       </div>
+       <div class="text-center mt-4">
+        <h1 id="coupleNames" style="font-family:'Great Vibes',cursive; color:#5a6b4a; font-size:42px; line-height:1.2;">Alana &amp; Gabriel</h1>
+       </div>
+       <div class="text-center mt-3">
+        <p id="invText" style="font-family:'Cormorant Garamond',serif; color:#6a7a5a; font-size:16px; font-style:italic; line-height:1.6;">Têm a honra de convidá-los para celebrar o dia mais importante em suas vidas, o seu casamento!
+          <br><br> "Assim, eles já não são dois, mas sim uma só carne. Portanto, o que Deus uniu, ninguém o separe." - Mateus 19:6
+        </p>
+       </div>
+       <div class="flex items-center justify-center gap-4 my-5">
+        <div style="height:1px; width:40px; background:rgba(107,134,89,0.3);"></div><span style="font-family:'Cormorant Garamond',serif; color:#6b8659; font-size:12px; letter-spacing:3px;">✦</span>
+        <div style="height:1px; width:40px; background:rgba(107,134,89,0.3);"></div>
+       </div>
+       <div class="text-center">
+        <p style="font-family:'Cormorant Garamond',serif; color:#6b8659; font-size:13px; letter-spacing:2px; text-transform:uppercase;">Dia</p>
+        <p id="dateText" style="font-family:'Playfair Display',serif; color:#5a6b4a; font-size:26px; font-weight:700; margin-top:4px;">15 de Agosto de 2026</p>
+       </div><!-- Countdown -->
+       <div class="mt-6 mb-6">
+        <p class="text-center mb-3" style="font-family:'Cormorant Garamond',serif; color:#6b8659; font-size:12px; letter-spacing:3px; text-transform:uppercase;">Faltam</p>
+        <div class="countdown-grid" id="countdown">
+         <div class="cd-box">
+          <div class="cd-num" id="cdDays">
+           --
+          </div>
+          <div class="cd-label">
+           Dias
+          </div>
+         </div>
+         <div class="cd-box">
+          <div class="cd-num" id="cdHours">
+           --
+          </div>
+          <div class="cd-label">
+           Horas
+          </div>
+         </div>
+         <div class="cd-box">
+          <div class="cd-num" id="cdMins">
+           --
+          </div>
+          <div class="cd-label">
+           Min
+          </div>
+         </div>
+         <div class="cd-box">
+          <div class="cd-num" id="cdSecs">
+           --
+          </div>
+          <div class="cd-label">
+           Seg
+          </div>
+         </div>
+        </div>
+       </div><span class="ornament" style="transform:rotate(180deg);">❧</span> <!-- Buttons -->
+       <div class="flex flex-col gap-3 mt-6" id="btnArea"><button class="inv-btn btn-primary" id="rsvpBtn" onclick="toggleRSVP()"> <i data-lucide="heart" style="width:16px;height:16px;"></i> <span>Confirmar Presença</span> </button> 
+        <a class="inv-btn btn-secondary" id="giftLink" href="https://www.finalfeliz.de/Gabriel_Alana" target="_blank" rel="noopener noreferrer"> <i data-lucide="gift" style="width:16px;height:16px;"></i> <span>Lista de Presentes</span> </a> 
+        <a class="inv-btn btn-secondary" id="venueLink" href="https://maps.app.goo.gl/ZJT1s9ZbBMF849i87" target="_blank" rel="noopener noreferrer"> <i data-lucide="map-pin" style="width:16px;height:16px;"></i> <span>Local do Casamento</span> </a>
+      </div>
+     </div>
+    </div>
+  </div> <!-- invitation-card -->
+</div> <!-- card-container -->
+</div> <!-- wrapper -->
+</div> <!-- app -->
+  <!-- RSVP Form -->
+
+    <div id="rsvpModal" class="rsvp-modal">
+
+    <div class="rsvp-box">
+
+    <span class="fechar" onclick="toggleRSVP()">✕</span>
+
+    <!-- FORM -->
+    <div class="rsvp-form mt-4" id="rsvpForm">
+      <div class="flex flex-col gap-4">
+
+        <input type="text" class="rsvp-input" id="guestName" placeholder="Seu nome completo">
+
+        <div>
+          <p class="text-center mb-2" style="font-family:'Cormorant Garamond',serif; color:#7a5c3a; font-size:14px;">
+            Quantas pessoas?
+          </p>
+
+          <div class="guest-counter">
+            <button class="gc-btn" onclick="changeCount(-1)">−</button>
+            <span class="gc-num" id="guestCount">1</span>
+            <button class="gc-btn" onclick="changeCount(1)">+</button>
+          </div>
+        </div>
+
+       <button type="button" class="inv-btn btn-primary" id="confirmBtn" onclick="confirmRSVP()">
+          <span id="confirmText">Confirmar</span>
+      </button>
+
+      </div>
+    </div>
+
+    <!-- SUCCESS -->
+    <div id="successMsg" style="display:none;" class="text-center mt-4">
+      <div style="font-size:32px;">💐</div>
+      <p style="font-family:'Great Vibes',cursive; color:#5a6b4a; font-size:24px;">
+        Obrigado!
+      </p>
+      <p style="font-family:'Cormorant Garamond',serif; color:#6a7a5a; font-size:14px;">
+        Sua presença foi confirmada com sucesso.
+      </p>
+    </div>
+
+  </div>
+</div>
+  <div class="toast-msg" id="toast"></div>
+ </body>
+</html>
