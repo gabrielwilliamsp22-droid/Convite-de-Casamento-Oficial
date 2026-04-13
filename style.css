@@ -4,8 +4,8 @@
   html {
   color-scheme: light;
 }
-body {
-  background-color: #ffffff;
+html, body {
+  background-color: #ffffff !important;
 }
   /* ===== BACKGROUND ===== */
   .bg-pattern {
