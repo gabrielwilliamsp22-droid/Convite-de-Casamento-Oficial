@@ -418,6 +418,9 @@
     50% { opacity: 1; }
   }
   @media (max-width: 768px) {
+  body {
+    background-image: url("capa.png");
+  }
   .bg-pattern {
     background-size: contain;
     background-position: center;
