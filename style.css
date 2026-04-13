@@ -419,7 +419,7 @@
   }
   @media (max-width: 768px) {
    .bg-pattern {
-    background-image: url("inicio.jpg");
+    background-image: url("mob.png");
     background-size: cover;
     background-position: center;
   }
