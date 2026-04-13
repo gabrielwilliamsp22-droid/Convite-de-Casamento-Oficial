@@ -419,7 +419,7 @@
   }
   @media (max-width: 768px) {
     body {
-    background-image: url("capa.jpg");
+    background-image: url("inicio.jpg");
   }
   .envelope {
     max-width: 90vw;
