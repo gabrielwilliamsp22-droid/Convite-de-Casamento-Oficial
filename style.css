@@ -419,7 +419,6 @@
   }
   @media (max-width: 768px) {
    body { 
-      background-image: url("capa.png");
       background-size: contain; 
       background-position: center; 
     }
