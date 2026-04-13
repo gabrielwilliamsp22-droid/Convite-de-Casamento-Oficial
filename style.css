@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
   /* ===== ENVELOPE CONTAINER ===== */
   .envelope-wrapper {
@@ -418,11 +418,10 @@
     50% { opacity: 1; }
   }
   @media (max-width: 768px) {
-    body {
-      background-image: url("capa.png");
-      background-size: contain;
-      background-position: center;
-    }
+  .bg-pattern {
+    background-size: contain;
+    background-position: center;
+  }
 
   .envelope {
     max-width: 90vw;
