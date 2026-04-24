@@ -418,7 +418,7 @@
   }
   @media (max-width: 768px) {
    .bg-pattern {
-    background-image: url("mob.png");
+    background-image: url("mob.jpg");
     background-size: cover;
     background-position: center;
   }
