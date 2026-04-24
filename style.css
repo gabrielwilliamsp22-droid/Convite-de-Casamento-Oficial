@@ -4,12 +4,8 @@
   html {
   color-scheme: light;
 }
-html, body {
-  background-color: #ffffff !important;
-}
   /* ===== BACKGROUND ===== */
   .bg-pattern {
-  background-color: #fff;
 
   background-image: 
     radial-gradient(ellipse at 20% 50%, rgba(107,134,89,0.15) 0%, transparent 50%),
