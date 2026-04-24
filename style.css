@@ -10,7 +10,7 @@
   background-image: 
     radial-gradient(ellipse at 20% 50%, rgba(107,134,89,0.15) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 50%, rgba(107,134,89,0.1) 0%, transparent 50%),
-    url("capa.png");
+    url("capa.jpg");
 
   background-size: cover;
   background-position: center;
