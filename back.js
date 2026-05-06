@@ -87,7 +87,7 @@
 }
 // Bloqueio por Navegador
 
-  /*function toggleRSVP() {
+  function toggleRSVP() {
   if (localStorage.getItem('rsvpConfirmed') === 'true') {
     showToast('Você já confirmou presença 😉');
     return;
@@ -95,7 +95,7 @@
 
   const modal = document.getElementById('rsvpModal');
   modal.classList.toggle('active');
-}*/
+}
 
   function changeCount(d) {
     guestCount = Math.max(1, Math.min(20, guestCount + d));
@@ -187,13 +187,13 @@
   }
 });
 //Bloqueio Por Navegador Pessoal e esconde o botão
-/*
+
 window.addEventListener('load', () => {
   if (localStorage.getItem('rsvpConfirmed') === 'true') {
     document.getElementById('rsvpBtn').style.display = 'none';
     document.getElementById('successMsg').style.display = 'block';
   }
-});*/
+});
 
   updateCountdown();
   setInterval(updateCountdown, 1000);
